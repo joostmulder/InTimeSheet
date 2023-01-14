@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180ACF232241049000826220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180ACF222241049000826220 /* AppDelegate.swift */; };
+		180ACF282241049000826220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180ACF262241049000826220 /* Main.storyboard */; };
+		180ACF2A2241049200826220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180ACF292241049200826220 /* Assets.xcassets */; };
+		180ACF2D2241049200826220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180ACF2B2241049200826220 /* LaunchScreen.storyboard */; };
+		180ACF382241049200826220 /* In_Time_SheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180ACF372241049200826220 /* In_Time_SheetTests.swift */; };
+		180ACF432241049200826220 /* In_Time_SheetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180ACF422241049200826220 /* In_Time_SheetUITests.swift */; };
+		180E3EBF22411F92009E7A1C /* TimeSheetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E3EBE22411F92009E7A1C /* TimeSheetsVC.swift */; };
+		180E3EC122411FBC009E7A1C /* TimeSheetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E3EC022411FBC009E7A1C /* TimeSheetsTableViewCell.swift */; };
+		180E3EC322412017009E7A1C /* TimeSheetsNoDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E3EC222412017009E7A1C /* TimeSheetsNoDataCell.swift */; };
+		180E3EC522412526009E7A1C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E3EC422412526009E7A1C /* SettingsVC.swift */; };
+		182899E92242B8A80022DA6F /* CreateNewTemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182899E82242B8A80022DA6F /* CreateNewTemplateVC.swift */; };
+		18379121224A38F600AFD559 /* DataCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18379120224A38F600AFD559 /* DataCrypto.swift */; };
+		18379122224A38F600AFD559 /* DataCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18379120224A38F600AFD559 /* DataCrypto.swift */; };
+		18379123224A38F600AFD559 /* DataCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18379120224A38F600AFD559 /* DataCrypto.swift */; };
+		18379125224A512900AFD559 /* DialogPdfPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18379124224A512900AFD559 /* DialogPdfPassword.swift */; };
+		18437A3222433C7700121C8C /* UnderLinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18437A3122433C7700121C8C /* UnderLinedTextField.swift */; };
+		18437A3422433DA000121C8C /* DialogAddNewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18437A3322433DA000121C8C /* DialogAddNewType.swift */; };
+		18437A36224358BE00121C8C /* AddingTimeSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18437A35224358BE00121C8C /* AddingTimeSheetVC.swift */; };
+		18437A38224358DA00121C8C /* AddingTimeSheetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18437A37224358DA00121C8C /* AddingTimeSheetTableCell.swift */; };
+		18437A3A2243647300121C8C /* DialogStaffSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18437A392243647300121C8C /* DialogStaffSignature.swift */; };
+		18437A3C2243699B00121C8C /* ResultPDFVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18437A3B2243699B00121C8C /* ResultPDFVC.swift */; };
+		186DA4CE2243C63F00B9BDBA /* DialogSaveTimeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DA4CD2243C63F00B9BDBA /* DialogSaveTimeSheet.swift */; };
+		186DA4D22243CF3C00B9BDBA /* TimeSheetDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DA4D12243CF3C00B9BDBA /* TimeSheetDetailsVC.swift */; };
+		18B7785D2247DA9C001B9E3A /* PDFTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7785C2247DA9C001B9E3A /* PDFTableCell.swift */; };
+		18C6173C2246499900DF0A20 /* TimeSheetDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6173B2246499900DF0A20 /* TimeSheetDetailsCell.swift */; };
+		18D58E5D2243276A008B13C0 /* CreateNewTempTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D58E5C2243276A008B13C0 /* CreateNewTempTableCell.swift */; };
+		18D58E5F22432BB4008B13C0 /* RequiredInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D58E5E22432BB4008B13C0 /* RequiredInfoTableCell.swift */; };
+		18D58E6122432BCB008B13C0 /* RequiredInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D58E6022432BCB008B13C0 /* RequiredInformationVC.swift */; };
+		18DCEA8D224561570096FE35 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEA8B224561570096FE35 /* Model.xcdatamodeld */; };
+		18DCEA8F224562600096FE35 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCEA8E224562600096FE35 /* DataModel.swift */; };
+		18ED9BC822422EEA002E9EF6 /* CreateTempAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BC722422EEA002E9EF6 /* CreateTempAlertVC.swift */; };
+		18ED9BCA2242447D002E9EF6 /* AddNewTemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BC92242447C002E9EF6 /* AddNewTemplateVC.swift */; };
+		18ED9BCC2242449F002E9EF6 /* AddNewTempTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BCB2242449F002E9EF6 /* AddNewTempTableCell.swift */; };
+		18ED9BCE224244EB002E9EF6 /* AddTempEmptyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BCD224244EB002E9EF6 /* AddTempEmptyTableCell.swift */; };
+		18ED9BD022424755002E9EF6 /* RoundedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BCF22424755002E9EF6 /* RoundedButtons.swift */; };
+		18ED9BD32242490B002E9EF6 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BD22242490B002E9EF6 /* AlertView.swift */; };
+		460838842276C02500444DAF /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460838832276C02500444DAF /* UserInfoVC.swift */; };
+		460838872277F0E800444DAF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460838862277F0E800444DAF /* ProfileViewController.swift */; };
+		46A96E8B227BD8940054D3AB /* PaidSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96E86227BD8940054D3AB /* PaidSubscription.swift */; };
+		46A96E8D227BD8940054D3AB /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96E88227BD8940054D3AB /* Session.swift */; };
+		46A96E8F227BD9170054D3AB /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96E8E227BD9170054D3AB /* SubscriptionService.swift */; };
+		46A96E91227BD9310054D3AB /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96E90227BD9310054D3AB /* Subscription.swift */; };
+		46A96E93227BE3D90054D3AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A96E92227BE3D90054D3AB /* StoreKit.framework */; };
+		46A96E97227BE4770054D3AB /* TimeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96E94227BE4760054D3AB /* TimeSheet.swift */; };
+		46A96E98227BE4770054D3AB /* TimeSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96E95227BE4760054D3AB /* TimeSheetService.swift */; };
+		46A96E99227BE4770054D3AB /* TimeSheetSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96E96227BE4770054D3AB /* TimeSheetSet.swift */; };
+		4832EB8414D43E426FBD51E5 /* Pods_In_Time_Sheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F4AB604D352A237E3A741D /* Pods_In_Time_Sheet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180ACF342241049200826220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180ACF172241049000826220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180ACF1E2241049000826220;
+			remoteInfo = "In Time Sheet";
+		};
+		180ACF3F2241049200826220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180ACF172241049000826220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180ACF1E2241049000826220;
+			remoteInfo = "In Time Sheet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180ACF1F2241049000826220 /* In Time Sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In Time Sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180ACF222241049000826220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		180ACF272241049000826220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180ACF292241049200826220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180ACF2C2241049200826220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180ACF2E2241049200826220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180ACF332241049200826220 /* In Time SheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "In Time SheetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180ACF372241049200826220 /* In_Time_SheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = In_Time_SheetTests.swift; sourceTree = "<group>"; };
+		180ACF392241049200826220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180ACF3E2241049200826220 /* In Time SheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "In Time SheetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180ACF422241049200826220 /* In_Time_SheetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = In_Time_SheetUITests.swift; sourceTree = "<group>"; };
+		180ACF442241049300826220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180E3EBE22411F92009E7A1C /* TimeSheetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetsVC.swift; sourceTree = "<group>"; };
+		180E3EC022411FBC009E7A1C /* TimeSheetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetsTableViewCell.swift; sourceTree = "<group>"; };
+		180E3EC222412017009E7A1C /* TimeSheetsNoDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetsNoDataCell.swift; sourceTree = "<group>"; };
+		180E3EC422412526009E7A1C /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		182899E82242B8A80022DA6F /* CreateNewTemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewTemplateVC.swift; sourceTree = "<group>"; };
+		18379120224A38F600AFD559 /* DataCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCrypto.swift; sourceTree = "<group>"; };
+		18379124224A512900AFD559 /* DialogPdfPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogPdfPassword.swift; sourceTree = "<group>"; };
+		18437A3122433C7700121C8C /* UnderLinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLinedTextField.swift; sourceTree = "<group>"; };
+		18437A3322433DA000121C8C /* DialogAddNewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAddNewType.swift; sourceTree = "<group>"; };
+		18437A35224358BE00121C8C /* AddingTimeSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingTimeSheetVC.swift; sourceTree = "<group>"; };
+		18437A37224358DA00121C8C /* AddingTimeSheetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingTimeSheetTableCell.swift; sourceTree = "<group>"; };
+		18437A392243647300121C8C /* DialogStaffSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogStaffSignature.swift; sourceTree = "<group>"; };
+		18437A3B2243699B00121C8C /* ResultPDFVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPDFVC.swift; sourceTree = "<group>"; };
+		186DA4CD2243C63F00B9BDBA /* DialogSaveTimeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSaveTimeSheet.swift; sourceTree = "<group>"; };
+		186DA4D12243CF3C00B9BDBA /* TimeSheetDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetDetailsVC.swift; sourceTree = "<group>"; };
+		18B7785C2247DA9C001B9E3A /* PDFTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTableCell.swift; sourceTree = "<group>"; };
+		18C6173B2246499900DF0A20 /* TimeSheetDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetDetailsCell.swift; sourceTree = "<group>"; };
+		18D58E5C2243276A008B13C0 /* CreateNewTempTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewTempTableCell.swift; sourceTree = "<group>"; };
+		18D58E5E22432BB4008B13C0 /* RequiredInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredInfoTableCell.swift; sourceTree = "<group>"; };
+		18D58E6022432BCB008B13C0 /* RequiredInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredInformationVC.swift; sourceTree = "<group>"; };
+		18DCEA8C224561570096FE35 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		18DCEA8E224562600096FE35 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		18ED9BC722422EEA002E9EF6 /* CreateTempAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTempAlertVC.swift; sourceTree = "<group>"; };
+		18ED9BC92242447C002E9EF6 /* AddNewTemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTemplateVC.swift; sourceTree = "<group>"; };
+		18ED9BCB2242449F002E9EF6 /* AddNewTempTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTempTableCell.swift; sourceTree = "<group>"; };
+		18ED9BCD224244EB002E9EF6 /* AddTempEmptyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTempEmptyTableCell.swift; sourceTree = "<group>"; };
+		18ED9BCF22424755002E9EF6 /* RoundedButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtons.swift; sourceTree = "<group>"; };
+		18ED9BD22242490B002E9EF6 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		460838832276C02500444DAF /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
+		460838862277F0E800444DAF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		46A96E86227BD8940054D3AB /* PaidSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaidSubscription.swift; sourceTree = "<group>"; };
+		46A96E88227BD8940054D3AB /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		46A96E8E227BD9170054D3AB /* SubscriptionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
+		46A96E90227BD9310054D3AB /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		46A96E92227BE3D90054D3AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		46A96E94227BE4760054D3AB /* TimeSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSheet.swift; sourceTree = "<group>"; };
+		46A96E95227BE4760054D3AB /* TimeSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSheetService.swift; sourceTree = "<group>"; };
+		46A96E96227BE4770054D3AB /* TimeSheetSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSheetSet.swift; sourceTree = "<group>"; };
+		7C7B29584F5EC29694345748 /* Pods-In Time Sheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In Time Sheet.release.xcconfig"; path = "Pods/Target Support Files/Pods-In Time Sheet/Pods-In Time Sheet.release.xcconfig"; sourceTree = "<group>"; };
+		AB7986B97893313DBB32760D /* Pods-In Time Sheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In Time Sheet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-In Time Sheet/Pods-In Time Sheet.debug.xcconfig"; sourceTree = "<group>"; };
+		C5F4AB604D352A237E3A741D /* Pods_In_Time_Sheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In_Time_Sheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180ACF1C2241049000826220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4832EB8414D43E426FBD51E5 /* Pods_In_Time_Sheet.framework in Frameworks */,
+				46A96E93227BE3D90054D3AB /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180ACF302241049200826220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180ACF3B2241049200826220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180ACF162241049000826220 = {
+			isa = PBXGroup;
+			children = (
+				180ACF212241049000826220 /* In Time Sheet */,
+				180ACF362241049200826220 /* In Time SheetTests */,
+				180ACF412241049200826220 /* In Time SheetUITests */,
+				180ACF202241049000826220 /* Products */,
+				B85E44E9C3A05BB1A40CAAD1 /* Pods */,
+				9B23665BE9D10F87B8D5562F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		180ACF202241049000826220 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180ACF1F2241049000826220 /* In Time Sheet.app */,
+				180ACF332241049200826220 /* In Time SheetTests.xctest */,
+				180ACF3E2241049200826220 /* In Time SheetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180ACF212241049000826220 /* In Time Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				18379120224A38F600AFD559 /* DataCrypto.swift */,
+				180ACF222241049000826220 /* AppDelegate.swift */,
+				186179FF2248E1E400C740B9 /* Data Model */,
+				186DA4DC2243E90C00B9BDBA /* Table Cells */,
+				18ED9BD12242475E002E9EF6 /* My Classes */,
+				186DA4DD2243E92500B9BDBA /* ViewControllers */,
+				46A96E7D227BC7C00054D3AB /* InAppPurchase */,
+				180ACF262241049000826220 /* Main.storyboard */,
+				180ACF292241049200826220 /* Assets.xcassets */,
+				180ACF2B2241049200826220 /* LaunchScreen.storyboard */,
+				180ACF2E2241049200826220 /* Info.plist */,
+				18DCEA8B224561570096FE35 /* Model.xcdatamodeld */,
+			);
+			path = "In Time Sheet";
+			sourceTree = "<group>";
+		};
+		180ACF362241049200826220 /* In Time SheetTests */ = {
+			isa = PBXGroup;
+			children = (
+				180ACF372241049200826220 /* In_Time_SheetTests.swift */,
+				180ACF392241049200826220 /* Info.plist */,
+			);
+			path = "In Time SheetTests";
+			sourceTree = "<group>";
+		};
+		180ACF412241049200826220 /* In Time SheetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180ACF422241049200826220 /* In_Time_SheetUITests.swift */,
+				180ACF442241049300826220 /* Info.plist */,
+			);
+			path = "In Time SheetUITests";
+			sourceTree = "<group>";
+		};
+		186179FF2248E1E400C740B9 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				18DCEA8E224562600096FE35 /* DataModel.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		186DA4D32243E84700B9BDBA /* TimeSheets */ = {
+			isa = PBXGroup;
+			children = (
+				180E3EBE22411F92009E7A1C /* TimeSheetsVC.swift */,
+			);
+			path = TimeSheets;
+			sourceTree = "<group>";
+		};
+		186DA4D42243E87400B9BDBA /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				186DA4CD2243C63F00B9BDBA /* DialogSaveTimeSheet.swift */,
+				18ED9BC722422EEA002E9EF6 /* CreateTempAlertVC.swift */,
+				18437A392243647300121C8C /* DialogStaffSignature.swift */,
+				18437A3322433DA000121C8C /* DialogAddNewType.swift */,
+				18379124224A512900AFD559 /* DialogPdfPassword.swift */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		186DA4D52243E88400B9BDBA /* Add New Template */ = {
+			isa = PBXGroup;
+			children = (
+				18ED9BC92242447C002E9EF6 /* AddNewTemplateVC.swift */,
+			);
+			path = "Add New Template";
+			sourceTree = "<group>";
+		};
+		186DA4D62243E89C00B9BDBA /* Create Template Page */ = {
+			isa = PBXGroup;
+			children = (
+				182899E82242B8A80022DA6F /* CreateNewTemplateVC.swift */,
+			);
+			path = "Create Template Page";
+			sourceTree = "<group>";
+		};
+		186DA4D72243E8AD00B9BDBA /* Required Information Page */ = {
+			isa = PBXGroup;
+			children = (
+				18D58E6022432BCB008B13C0 /* RequiredInformationVC.swift */,
+			);
+			path = "Required Information Page";
+			sourceTree = "<group>";
+		};
+		186DA4D82243E8BB00B9BDBA /* Settings Page */ = {
+			isa = PBXGroup;
+			children = (
+				180E3EC422412526009E7A1C /* SettingsVC.swift */,
+				460838832276C02500444DAF /* UserInfoVC.swift */,
+			);
+			path = "Settings Page";
+			sourceTree = "<group>";
+		};
+		186DA4D92243E8D000B9BDBA /* Adding Time Sheets Page */ = {
+			isa = PBXGroup;
+			children = (
+				18437A35224358BE00121C8C /* AddingTimeSheetVC.swift */,
+			);
+			path = "Adding Time Sheets Page";
+			sourceTree = "<group>";
+		};
+		186DA4DA2243E8E100B9BDBA /* ResultPDF page */ = {
+			isa = PBXGroup;
+			children = (
+				18437A3B2243699B00121C8C /* ResultPDFVC.swift */,
+			);
+			path = "ResultPDF page";
+			sourceTree = "<group>";
+		};
+		186DA4DB2243E8EF00B9BDBA /* TimeSheet Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				186DA4D12243CF3C00B9BDBA /* TimeSheetDetailsVC.swift */,
+			);
+			path = "TimeSheet Details Page";
+			sourceTree = "<group>";
+		};
+		186DA4DC2243E90C00B9BDBA /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				180E3EC022411FBC009E7A1C /* TimeSheetsTableViewCell.swift */,
+				18B7785C2247DA9C001B9E3A /* PDFTableCell.swift */,
+				18C6173B2246499900DF0A20 /* TimeSheetDetailsCell.swift */,
+				18ED9BCB2242449F002E9EF6 /* AddNewTempTableCell.swift */,
+				18ED9BCD224244EB002E9EF6 /* AddTempEmptyTableCell.swift */,
+				180E3EC222412017009E7A1C /* TimeSheetsNoDataCell.swift */,
+				18D58E5C2243276A008B13C0 /* CreateNewTempTableCell.swift */,
+				18D58E5E22432BB4008B13C0 /* RequiredInfoTableCell.swift */,
+				18437A37224358DA00121C8C /* AddingTimeSheetTableCell.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		186DA4DD2243E92500B9BDBA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				460838862277F0E800444DAF /* ProfileViewController.swift */,
+				186DA4D42243E87400B9BDBA /* Dialogs */,
+				186DA4D82243E8BB00B9BDBA /* Settings Page */,
+				186DA4D32243E84700B9BDBA /* TimeSheets */,
+				186DA4DB2243E8EF00B9BDBA /* TimeSheet Details Page */,
+				186DA4D52243E88400B9BDBA /* Add New Template */,
+				186DA4D62243E89C00B9BDBA /* Create Template Page */,
+				186DA4D72243E8AD00B9BDBA /* Required Information Page */,
+				186DA4D92243E8D000B9BDBA /* Adding Time Sheets Page */,
+				186DA4DA2243E8E100B9BDBA /* ResultPDF page */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18ED9BD12242475E002E9EF6 /* My Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18ED9BCF22424755002E9EF6 /* RoundedButtons.swift */,
+				18437A3122433C7700121C8C /* UnderLinedTextField.swift */,
+				18ED9BD22242490B002E9EF6 /* AlertView.swift */,
+			);
+			path = "My Classes";
+			sourceTree = "<group>";
+		};
+		46A96E7D227BC7C00054D3AB /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				46A96E86227BD8940054D3AB /* PaidSubscription.swift */,
+				46A96E88227BD8940054D3AB /* Session.swift */,
+				46A96E8E227BD9170054D3AB /* SubscriptionService.swift */,
+				46A96E90227BD9310054D3AB /* Subscription.swift */,
+				46A96E94227BE4760054D3AB /* TimeSheet.swift */,
+				46A96E95227BE4760054D3AB /* TimeSheetService.swift */,
+				46A96E96227BE4770054D3AB /* TimeSheetSet.swift */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		9B23665BE9D10F87B8D5562F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A96E92227BE3D90054D3AB /* StoreKit.framework */,
+				C5F4AB604D352A237E3A741D /* Pods_In_Time_Sheet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B85E44E9C3A05BB1A40CAAD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB7986B97893313DBB32760D /* Pods-In Time Sheet.debug.xcconfig */,
+				7C7B29584F5EC29694345748 /* Pods-In Time Sheet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180ACF1E2241049000826220 /* In Time Sheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180ACF472241049300826220 /* Build configuration list for PBXNativeTarget "In Time Sheet" */;
+			buildPhases = (
+				EBA42924514BE5F54013A6D7 /* [CP] Check Pods Manifest.lock */,
+				180ACF1B2241049000826220 /* Sources */,
+				180ACF1C2241049000826220 /* Frameworks */,
+				180ACF1D2241049000826220 /* Resources */,
+				0C253488512EAC9600104FDF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "In Time Sheet";
+			productName = "In Time Sheet";
+			productReference = 180ACF1F2241049000826220 /* In Time Sheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180ACF322241049200826220 /* In Time SheetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180ACF4A2241049300826220 /* Build configuration list for PBXNativeTarget "In Time SheetTests" */;
+			buildPhases = (
+				180ACF2F2241049200826220 /* Sources */,
+				180ACF302241049200826220 /* Frameworks */,
+				180ACF312241049200826220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180ACF352241049200826220 /* PBXTargetDependency */,
+			);
+			name = "In Time SheetTests";
+			productName = "In Time SheetTests";
+			productReference = 180ACF332241049200826220 /* In Time SheetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180ACF3D2241049200826220 /* In Time SheetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180ACF4D2241049300826220 /* Build configuration list for PBXNativeTarget "In Time SheetUITests" */;
+			buildPhases = (
+				180ACF3A2241049200826220 /* Sources */,
+				180ACF3B2241049200826220 /* Frameworks */,
+				180ACF3C2241049200826220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180ACF402241049200826220 /* PBXTargetDependency */,
+			);
+			name = "In Time SheetUITests";
+			productName = "In Time SheetUITests";
+			productReference = 180ACF3E2241049200826220 /* In Time SheetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180ACF172241049000826220 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sonu Singh";
+				TargetAttributes = {
+					180ACF1E2241049000826220 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					180ACF322241049200826220 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 180ACF1E2241049000826220;
+					};
+					180ACF3D2241049200826220 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 180ACF1E2241049000826220;
+					};
+				};
+			};
+			buildConfigurationList = 180ACF1A2241049000826220 /* Build configuration list for PBXProject "In Time Sheet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180ACF162241049000826220;
+			productRefGroup = 180ACF202241049000826220 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180ACF1E2241049000826220 /* In Time Sheet */,
+				180ACF322241049200826220 /* In Time SheetTests */,
+				180ACF3D2241049200826220 /* In Time SheetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180ACF1D2241049000826220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180ACF2D2241049200826220 /* LaunchScreen.storyboard in Resources */,
+				180ACF2A2241049200826220 /* Assets.xcassets in Resources */,
+				180ACF282241049000826220 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180ACF312241049200826220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180ACF3C2241049200826220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C253488512EAC9600104FDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-In Time Sheet/Pods-In Time Sheet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/INSPersistentContainer/INSPersistentContainer.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Instructions/Instructions.framework",
+				"${BUILT_PRODUCTS_DIR}/PDFGenerator/PDFGenerator.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSignatureView/SwiftSignatureView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSPersistentContainer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instructions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFGenerator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSignatureView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-In Time Sheet/Pods-In Time Sheet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA42924514BE5F54013A6D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-In Time Sheet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180ACF1B2241049000826220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A96E98227BE4770054D3AB /* TimeSheetService.swift in Sources */,
+				18ED9BC822422EEA002E9EF6 /* CreateTempAlertVC.swift in Sources */,
+				18379125224A512900AFD559 /* DialogPdfPassword.swift in Sources */,
+				18ED9BCA2242447D002E9EF6 /* AddNewTemplateVC.swift in Sources */,
+				18379121224A38F600AFD559 /* DataCrypto.swift in Sources */,
+				46A96E91227BD9310054D3AB /* Subscription.swift in Sources */,
+				186DA4D22243CF3C00B9BDBA /* TimeSheetDetailsVC.swift in Sources */,
+				18D58E5F22432BB4008B13C0 /* RequiredInfoTableCell.swift in Sources */,
+				46A96E8F227BD9170054D3AB /* SubscriptionService.swift in Sources */,
+				180E3EBF22411F92009E7A1C /* TimeSheetsVC.swift in Sources */,
+				46A96E8D227BD8940054D3AB /* Session.swift in Sources */,
+				18C6173C2246499900DF0A20 /* TimeSheetDetailsCell.swift in Sources */,
+				18DCEA8F224562600096FE35 /* DataModel.swift in Sources */,
+				18ED9BCC2242449F002E9EF6 /* AddNewTempTableCell.swift in Sources */,
+				18ED9BCE224244EB002E9EF6 /* AddTempEmptyTableCell.swift in Sources */,
+				18D58E6122432BCB008B13C0 /* RequiredInformationVC.swift in Sources */,
+				460838872277F0E800444DAF /* ProfileViewController.swift in Sources */,
+				18D58E5D2243276A008B13C0 /* CreateNewTempTableCell.swift in Sources */,
+				18437A3422433DA000121C8C /* DialogAddNewType.swift in Sources */,
+				18ED9BD32242490B002E9EF6 /* AlertView.swift in Sources */,
+				18DCEA8D224561570096FE35 /* Model.xcdatamodeld in Sources */,
+				18437A3C2243699B00121C8C /* ResultPDFVC.swift in Sources */,
+				18B7785D2247DA9C001B9E3A /* PDFTableCell.swift in Sources */,
+				46A96E97227BE4770054D3AB /* TimeSheet.swift in Sources */,
+				18437A3A2243647300121C8C /* DialogStaffSignature.swift in Sources */,
+				46A96E99227BE4770054D3AB /* TimeSheetSet.swift in Sources */,
+				18437A3222433C7700121C8C /* UnderLinedTextField.swift in Sources */,
+				18ED9BD022424755002E9EF6 /* RoundedButtons.swift in Sources */,
+				186DA4CE2243C63F00B9BDBA /* DialogSaveTimeSheet.swift in Sources */,
+				182899E92242B8A80022DA6F /* CreateNewTemplateVC.swift in Sources */,
+				180E3EC322412017009E7A1C /* TimeSheetsNoDataCell.swift in Sources */,
+				180E3EC122411FBC009E7A1C /* TimeSheetsTableViewCell.swift in Sources */,
+				18437A38224358DA00121C8C /* AddingTimeSheetTableCell.swift in Sources */,
+				180ACF232241049000826220 /* AppDelegate.swift in Sources */,
+				180E3EC522412526009E7A1C /* SettingsVC.swift in Sources */,
+				46A96E8B227BD8940054D3AB /* PaidSubscription.swift in Sources */,
+				18437A36224358BE00121C8C /* AddingTimeSheetVC.swift in Sources */,
+				460838842276C02500444DAF /* UserInfoVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180ACF2F2241049200826220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18379122224A38F600AFD559 /* DataCrypto.swift in Sources */,
+				180ACF382241049200826220 /* In_Time_SheetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180ACF3A2241049200826220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18379123224A38F600AFD559 /* DataCrypto.swift in Sources */,
+				180ACF432241049200826220 /* In_Time_SheetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180ACF352241049200826220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180ACF1E2241049000826220 /* In Time Sheet */;
+			targetProxy = 180ACF342241049200826220 /* PBXContainerItemProxy */;
+		};
+		180ACF402241049200826220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180ACF1E2241049000826220 /* In Time Sheet */;
+			targetProxy = 180ACF3F2241049200826220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		180ACF262241049000826220 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180ACF272241049000826220 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180ACF2B2241049200826220 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180ACF2C2241049200826220 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180ACF452241049300826220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		180ACF462241049300826220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180ACF482241049300826220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB7986B97893313DBB32760D /* Pods-In Time Sheet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY6BVNVMW4;
+				INFOPLIST_FILE = "In Time Sheet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intimesheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		180ACF492241049300826220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7B29584F5EC29694345748 /* Pods-In Time Sheet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY6BVNVMW4;
+				INFOPLIST_FILE = "In Time Sheet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intimesheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		180ACF4B2241049300826220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "In Time SheetTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.InTimeSheet.In-Time-SheetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/In Time Sheet.app/In Time Sheet";
+			};
+			name = Debug;
+		};
+		180ACF4C2241049300826220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "In Time SheetTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.InTimeSheet.In-Time-SheetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/In Time Sheet.app/In Time Sheet";
+			};
+			name = Release;
+		};
+		180ACF4E2241049300826220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "In Time SheetUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.InTimeSheet.In-Time-SheetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "In Time Sheet";
+			};
+			name = Debug;
+		};
+		180ACF4F2241049300826220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "In Time SheetUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.InTimeSheet.In-Time-SheetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "In Time Sheet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180ACF1A2241049000826220 /* Build configuration list for PBXProject "In Time Sheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180ACF452241049300826220 /* Debug */,
+				180ACF462241049300826220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180ACF472241049300826220 /* Build configuration list for PBXNativeTarget "In Time Sheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180ACF482241049300826220 /* Debug */,
+				180ACF492241049300826220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180ACF4A2241049300826220 /* Build configuration list for PBXNativeTarget "In Time SheetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180ACF4B2241049300826220 /* Debug */,
+				180ACF4C2241049300826220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180ACF4D2241049300826220 /* Build configuration list for PBXNativeTarget "In Time SheetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180ACF4E2241049300826220 /* Debug */,
+				180ACF4F2241049300826220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18DCEA8B224561570096FE35 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18DCEA8C224561570096FE35 /* Model.xcdatamodel */,
+			);
+			currentVersion = 18DCEA8C224561570096FE35 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 180ACF172241049000826220 /* Project object */;
+}

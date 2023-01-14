@@ -1,0 +1,6 @@
+framework module INSPersistentContainer {
+  umbrella header "INSPersistentContainer-umbrella.h"
+
+  export *
+  module * { export * }
+}

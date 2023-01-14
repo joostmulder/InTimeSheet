@@ -1,0 +1,32 @@
+PODS:
+  - INSPersistentContainer (1.0.2)
+  - Instructions (1.2.2)
+  - IQKeyboardManager (6.2.0)
+  - PDFGenerator (3.0.0)
+  - SwiftSignatureView (2.0.2)
+
+DEPENDENCIES:
+  - INSPersistentContainer
+  - Instructions
+  - IQKeyboardManager
+  - PDFGenerator
+  - SwiftSignatureView
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - INSPersistentContainer
+    - Instructions
+    - IQKeyboardManager
+    - PDFGenerator
+    - SwiftSignatureView
+
+SPEC CHECKSUMS:
+  INSPersistentContainer: 7e04a0d332ba075441ce0ee73d584ce84d76ac23
+  Instructions: baff1b8ac41e195556c2b3453be1fcdd92e18612
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  PDFGenerator: e00fd09ae8021e304b5672cf11bc28234fc626e7
+  SwiftSignatureView: f9ea7317c6c5520b21190e499fbb859ae85c4e55
+
+PODFILE CHECKSUM: 18dd5cd4ecb77e5ff84cf305c8ebbe3273186dca
+
+COCOAPODS: 1.5.0
